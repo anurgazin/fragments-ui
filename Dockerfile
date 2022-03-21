@@ -7,11 +7,15 @@ LABEL description="Fragments-Ui service"
 
 WORKDIR /app
 
-# copy dep files and install the production deps
+# Copy the package.json and package-lock.json
 COPY package*.json ./
+
+# Install node dependencies defined in package-lock.json
+# STEP 20: Installing only production dependencies
 RUN npm ci --only=production
+
+
 COPY --chown=node:node ./src ./src
-# dropping privileges
 USER node
 # Start the container by running our server
 CMD npm start
