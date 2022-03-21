@@ -1,0 +1,27 @@
+{
+  "name": "fragments-ui",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Fragments UI testing web app",
+  "source": "src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anurgazin/fragments-ui.git"
+  },
+  "author": "Aldiyar Nurgazin",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "parcel": "^2.3.2",
+    "process": "^0.11.10",
+    "querystring-es3": "^0.2.1"
+  },
+  "dependencies": {
+    "aws-amplify": "^4.3.14",
+    "dotenv": "^14.2.0"
+  }
+}
