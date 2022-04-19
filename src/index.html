@@ -18,13 +18,41 @@
         <option value="text/markdown">Text/Markdown</option>
         <option value="text/html">Text/HTML</option>
         <option value="application/json">application/JSON</option>
+        <option value="image/png">image/png</option>
+        <option value="image/jpeg">image/jpeg</option>
+        <option value="image/webp">image/webp</option>
+        <option value="image/gif">image/gif</option>
       </select>
-      <br> <br>
-      <label for="content">Enter Data:</label>
-      <input type="text" id="content" name="content"><br><br>
-      <button id="post">POST</button> <br />
       <br />
-      <button id="get">GET</button>
+      <br />
+      <label for="content">Enter Data:</label>
+      <input type="text" id="content" name="content" /><br /><br />
+      <label for="photo" id="photo" name="photo">Photo Upload</label>
+      <input type="file" id="photo" name="photo"> <br><br>
+      <button id="post">POST</button>
+      <button id="get">GET ALL</button>
+      <br>
+      <br>
+      <label for="get_id">Enter ID For Get:</label>
+      <input type="text" id="get_id" name="get_id" /><br /><br />
+      <button id="getbyid">GET BY ID</button>
+      <button id="getInfo">GET BY ID INFO</button>
+      <br>
+      <br>
+      <p id="content-type" name="content-type">DATA:</p>
+      <br />
+      <br />
+      <label for="fragments_id">Enter ID For Delete:</label>
+      <input type="text" id="fragments_id" name="fragments_id" /><br /><br />
+      <button id="delete">Delete</button> <br />
+      <br>
+      <label for="fragment_id">Enter ID For update:</label>
+      <input type="text" id="fragment_id" name="fragment_id" /><br /><br />
+      <label for="upd_content">Enter Data:</label>
+      <input type="text" id="upd_content" name="upd_content" /><br /><br />
+      <button id="update">PUT</button> <br />
+      <br>
+      <p id="fragments" name="fragments">List of Fragments <br></p>
     </section>
     <section hidden id="user">
       <h2>Hello <span class="username"></span>!</h2>
